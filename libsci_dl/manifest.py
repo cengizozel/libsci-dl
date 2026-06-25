@@ -36,7 +36,7 @@ class Manifest:
         return row["status"] if row else None
 
     def is_done(self, identifier: str) -> bool:
-        """Done means OK (downloaded) — trusted even if the file was moved away."""
+        """Done means OK (downloaded) - trusted even if the file was moved away."""
         return self.status(identifier) == "ok"
 
     def record(self, result) -> None:

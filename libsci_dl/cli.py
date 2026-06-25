@@ -121,7 +121,7 @@ def main(argv: Optional[list[str]] = None) -> int:
             print(f"{res.identifier}\t{res.status}\t{url}")
         else:
             tag = {"ok": "OK ", "not_found": "MISS", "error": "ERR "}.get(res.status, res.status)
-            extra = f" -> {res.source}" if res.status == "ok" else (f" ({res.error})" if res.error else "")
+            extra = f" from {res.source}" if res.status == "ok" else (f" ({res.error})" if res.error else "")
             done = counts["ok"] + counts["not_found"] + counts["error"]
             print(f"[{done}] {tag} {res.identifier}{extra}", flush=True)
 

@@ -42,7 +42,7 @@ def detect(raw: str) -> tuple[IdType, str]:
         s = s.split(":", 1)[1].strip()
         low = s.lower()
 
-    # URLs — but a doi.org / arxiv.org URL is better treated as its identifier
+    # URLs - but a doi.org / arxiv.org URL is better treated as its identifier
     if low.startswith(("http://", "https://", "www.")):
         m = _DOI_IN_URL_RE.search(s)
         if "doi.org/" in low and m:

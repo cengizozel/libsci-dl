@@ -1,11 +1,11 @@
-"""ISBN -> Library Genesis.
+"""ISBN to Library Genesis.
 
 Flow that works in practice:
-  GET {mirror}/index.php?req=<ISBN>      -> results table (md5 per row)
-  GET {mirror}/ads.php?md5=<MD5>         -> page containing get.php?md5=...&key=...
+  GET {mirror}/index.php?req=<ISBN>      returns a results table (md5 per row)
+  GET {mirror}/ads.php?md5=<MD5>         returns a page containing get.php?md5=...&key=...
   the get.php link is the direct download.
 
-We prefer the *smallest* valid edition (pdf > epub > djvu, <= size cap, then
+We prefer the *smallest* valid edition (pdf over epub over djvu, at or under the size cap, then
 smallest file). Bandwidth is the bottleneck, so a small text PDF beats a 150 MB
 scan of the same book and lets far more books finish.
 """

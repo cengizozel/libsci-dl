@@ -1,4 +1,4 @@
-"""libsci-dl — resolve and download books/papers by identifier.
+"""libsci-dl - resolve and download books/papers by identifier.
 
 Sources: Library Genesis (ISBN), Unpaywall + PubMed Central + Sci-Hub (DOI),
 arXiv, and direct URLs.

@@ -1,4 +1,4 @@
-"""Orchestration: identifier -> candidates -> downloaded file.
+"""Orchestration: from identifier to candidates to a downloaded file.
 
 For each identifier we detect its type, ask the registered resolvers for
 candidate download URLs (cheapest/legal sources first), then either return those

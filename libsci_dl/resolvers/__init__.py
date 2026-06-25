@@ -1,8 +1,9 @@
 """Resolvers turn an identifier into a list of download Candidates.
 
-Each resolver is a callable ``resolve(identifier, title="", http=session) -> list[Candidate]``.
-The registry maps an IdType to an ordered list of resolvers; earlier resolvers
-are preferred (e.g. legal open-access before Sci-Hub).
+Each resolver is a callable ``resolve(identifier, title="", http=session)`` that
+returns a list of Candidate objects. The registry maps an IdType to an ordered
+list of resolvers; earlier resolvers are preferred (legal open access before
+Sci-Hub).
 """
 from __future__ import annotations
 

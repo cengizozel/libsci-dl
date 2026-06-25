@@ -2,9 +2,9 @@
 
 Two engines:
 
-* ``requests`` — fast plain HTTP, used for direct-PDF links (arXiv, Libgen,
+* ``requests`` - fast plain HTTP, used for direct-PDF links (arXiv, Libgen,
   open-access repositories).
-* Selenium (headless browser) — used when a site sits behind an anti-bot wall
+* Selenium (headless browser) - used when a site sits behind an anti-bot wall
   (Cloudflare / DDoS-Guard) or needs JavaScript, which ``requests`` cannot pass.
   This is the difference that makes Sci-Hub and PubMed Central work.
 
@@ -213,7 +213,7 @@ class Downloader:
         ext = None
         if cand.method is FetchMethod.REQUESTS:
             ext = self._requests_to(cand.url, tmp)
-            if ext is None:  # link may sit behind anti-bot/JS -> browser fallback
+            if ext is None:  # link may sit behind anti-bot/JS, so try the browser
                 ext = self._browser_download(cand.url, tmp)
         elif cand.method is FetchMethod.SELENIUM:
             ext = self._browser_download(cand.url, tmp)

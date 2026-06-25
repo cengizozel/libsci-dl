@@ -1,4 +1,4 @@
-"""arXiv — fully open access, just construct the PDF URL."""
+"""arXiv - fully open access, just construct the PDF URL."""
 from __future__ import annotations
 
 from ..models import Candidate, FetchMethod

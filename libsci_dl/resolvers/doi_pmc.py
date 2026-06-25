@@ -1,4 +1,4 @@
-"""DOI -> PubMed Central (free full text for biomedical literature).
+"""DOI to PubMed Central (free full text for biomedical literature).
 
 NCBI's ID-converter maps a DOI to a PMCID; PMC then has a free PDF at
 ``/articles/<PMCID>/pdf/``. PMC serves an anti-bot interstitial to plain HTTP,

@@ -1,7 +1,7 @@
-"""A raw URL -> try it directly, plus a few obvious PDF derivations.
+"""A raw URL: try it directly, plus a few obvious PDF derivations.
 
 Some inputs are already direct PDFs (good); others are landing pages where the
-PDF lives at a predictable sibling URL (JMLR ``.html`` -> ``.pdf``, RFC editor,
+PDF lives at a predictable sibling URL (JMLR ``.html`` becomes ``.pdf``, RFC editor,
 NASA NTRS). The Selenium fallback in the downloader covers the rest.
 """
 from __future__ import annotations

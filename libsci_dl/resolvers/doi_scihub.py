@@ -1,4 +1,4 @@
-"""DOI -> Sci-Hub (last-resort fallback).
+"""DOI to Sci-Hub (last-resort fallback).
 
 Sci-Hub sits behind DDoS-Guard, whose JavaScript challenge plain ``requests``
 cannot solve (it gets a tiny stub/captcha page and a cumulative IP ban). A real

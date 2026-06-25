@@ -1,4 +1,4 @@
-"""DOI -> Unpaywall (legal open access).
+"""DOI to Unpaywall (legal open access).
 
 Unpaywall indexes open-access copies of paywalled articles. This is the first
 DOI resolver tried because it is legal and free. Many candidates are direct
