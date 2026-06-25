@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "libsci-dl"
+version = "0.1.0"
+description = "Resolve and download books/papers by identifier (ISBN via Libgen; DOI via open access, PMC, Sci-Hub; arXiv; URL)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Cengiz Ozel" }]
+keywords = ["isbn", "doi", "arxiv", "libgen", "scihub", "unpaywall", "downloader"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+dependencies = [
+    "requests>=2.25",
+    "selenium>=4.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/cengizozel/libsci-dl"
+Repository = "https://github.com/cengizozel/libsci-dl"
+
+[project.scripts]
+libsci-dl = "libsci_dl.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["libsci_dl*"]

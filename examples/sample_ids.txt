@@ -1,0 +1,18 @@
+# One identifier per line. Blank lines and lines starting with '#' are ignored.
+# Lines may be a bare identifier, or tab-separated where the first field is the
+# identifier and the last field is an optional title (used for the filename).
+
+# ISBN (book, via Libgen)
+9780471433347	isbn	Abstract Algebra - Dummit & Foote
+9780262033848	isbn	Introduction to Algorithms - CLRS
+
+# DOI (paper, via open access / PMC / Sci-Hub)
+10.1038/323533a0	doi	Learning representations by back-propagating errors
+10.1113/jphysiol.1952.sp004764	doi	Hodgkin & Huxley membrane current
+
+# arXiv (open access)
+1706.03762	arxiv	Attention Is All You Need
+1506.02640	arxiv	YOLO
+
+# Direct URL
+https://bitcoin.org/bitcoin.pdf	url	Bitcoin whitepaper
