@@ -61,9 +61,13 @@ Detailed docs live in [`docs/`](docs/):
 - [Extending](docs/extending.md) - add a new source by writing a resolver.
 - [Troubleshooting](docs/troubleshooting.md) - chromedriver, rate limits, cookies, TLS.
 
-## Legal
+## Disclaimer
 
-This tool automates access to third-party services, some of which host copyrighted material without permission; downloading such material may be illegal where you live. It is intended for legitimate uses: open-access works, material you are licensed to access, and text and data mining where permitted. You are responsible for how you use it and for complying with the law and each service's terms. The author hosts no content and does not endorse infringement.
+`libsci-dl` is a client that retrieves documents by their identifiers. It hosts, stores, and distributes no content of its own; it only sends requests to publicly available services on the user's behalf, much like a web browser.
+
+Users are responsible for ensuring they have the right to access any material they retrieve and for complying with applicable copyright law and the terms of each service. The tool is intended for legitimate purposes, including accessing open-access publications, retrieving material the user is licensed or otherwise entitled to access, personal research, and text and data mining where permitted.
+
+This project is provided for educational and research purposes only.
 
 ## License
 
